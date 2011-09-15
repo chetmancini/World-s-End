@@ -1,0 +1,7 @@
+SRCS=fog.c glm.c
+PROG=Fog
+
+CFLAGS+= -I /usr/pkg/include
+LDFLAGS+= -L /usr/pkg/lib -L /usr/X11R6/lib -R /usr/pkg/lib -R /usr/X11R6/lib -lGL -lGLU  -lglut -lX11 -lXmu -lXext -lXt -lICE -lXi -lSM -lm
+NOMAN=
+.include <bsd.prog.mk>
